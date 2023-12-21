@@ -31,14 +31,14 @@ body {
 /* button style start */
 .btn-div {
   position: fixed;
-  top: 0.5rem;
+  top: 1rem;
   right: 1rem;
   border: none;
-  padding: 0.5rem 6rem;
+  /* padding: 0.5rem 6rem; */
   cursor: pointer;
   z-index: 99;
-
 }
+
 button {
   position: relative;
   display: inline-block;
@@ -80,13 +80,11 @@ button.learn-more .button-text {
   text-transform: uppercase;
 }
 
-
 button:hover .button-text {
   color: #fff;
 }
 
-
-#note-section{
+#note-section {
   width: 100vw;
   display: flex;
   align-items: center;
@@ -94,7 +92,7 @@ button:hover .button-text {
   flex-wrap: wrap;
   align-content: flex-start;
   margin-top: 39px;
-  overflow:auto;
+  overflow: auto;
   /* scrollbar-gutter: stable; */
 }
 .note {
@@ -106,7 +104,6 @@ button:hover .button-text {
   box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
     inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   overflow: auto;
-
 }
 .note .tools {
   display: flex;
@@ -115,7 +112,6 @@ button:hover .button-text {
   margin: -54px 0px 0px;
   position: absolute;
   z-index: 0;
-
 }
 .note .tools button {
   background-color: transparent;
@@ -125,7 +121,8 @@ button:hover .button-text {
   font-size: 1rem;
   margin-left: 1rem;
 }
-.note textarea,.note .main {
+.note textarea,
+.note .main {
   outline: none;
   font-family: inherit;
   font-size: 1.2rem;
@@ -158,86 +155,82 @@ button:hover .button-text {
   display: none;
 }
 
-
-
 ::-webkit-scrollbar {
   width: 5px;
 }
-
 
 ::-webkit-scrollbar-track {
   background: #888;
 }
 
-
 ::-webkit-scrollbar-thumb {
-
   background: #f1c40f;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
-@media(width >= 1563px){
+@media (width >= 1563px) {
   .note {
     height: 220px;
     width: 480px;
-} 
+  }
 }
-@media(width <= 1562px){
+@media (width <= 1562px) {
   .note {
     height: 220px;
     width: 400px;
-  } 
+  }
 }
-@media(width <= 1320px){
+@media (width <= 1320px) {
   .note {
     height: 220px;
     width: 480px;
-  } 
+  }
 }
-@media(width <= 1040px){
+@media (width <= 1040px) {
   .note {
     height: 220px;
     width: 400px;
-  } 
+  }
 }
-@media(width <= 880px){
+@media (width <= 880px) {
   .note {
     height: 220px;
     width: 350px;
-  } 
+  }
 }
-@media(width <= 780px){
+@media (width <= 780px) {
   .note {
     height: 220px;
     width: 300px;
-  } 
+  }
 }
-@media(width <= 680px){
+@media (width <= 680px) {
   .note {
     height: 220px;
     width: 400px;
-  } 
-}
-@media(width <= 540px){
-  .btn-div {
-    /* position: absolute; */
   }
-  .button.learn-more{
+}
+@media (width <= 540px) {
+  .btn-div {
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    cursor: pointer;
+    z-index: 99;
+    height: 50px;
+    font-size: 20px;
   }
-  button.learn-more .button-text {
-    /* position: absolute; */
-    top: 90vh;
-    font-size: 25px;
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: green;
+  /* button.learn-more .button-text{
+    top: 13px;
+    height: 10px;
+    border: 1px solid red;
+  } */
+  button:hover .button-text {
+    color: green;
   }
 }
