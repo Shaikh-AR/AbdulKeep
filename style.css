@@ -216,14 +216,25 @@ button:hover .button-text {
 @media (width <= 540px) {
   .btn-div {
     position: sticky;
+    top: 93px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     cursor: pointer;
-    z-index: 99;
+    z-index: 999;
     height: 50px;
-    font-size: 20px;
+    width: 50%;
+margin: 0px auto;
+border: none;
+border-bottom: 3px solid red;
+border-radius: 25px;
+background: linear-gradient(to top,red ,white);
+    /* background-color: red; */
+    font-size: 24px;
+  }
+  button.learn-more .button-text {
+    line-height: 0;
   }
   /* button.learn-more .button-text{
     top: 13px;
